@@ -1,5 +1,7 @@
 import * as React from 'react';
 import './planos.css'
+import logo from '../../assets/img/viasat.svg'
+
 import SettingsInputAntennaOutlinedIcon from '@mui/icons-material/SettingsInputAntennaOutlined';
 
 export default function Plano() {
@@ -7,7 +9,7 @@ export default function Plano() {
         <div className='container-plano' >
 
             <div className='InfoMarca' >
-                <img src='.../'></img>
+               <img src={logo} ></img>
                 <h5>NomeDaMarca</h5>
             </div>
 

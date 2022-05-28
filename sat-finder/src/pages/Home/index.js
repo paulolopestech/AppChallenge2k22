@@ -1,9 +1,9 @@
 import '../../App.css';
 import React, { useEffect, useState } from 'react';
 
-import Titulo from '../../components/titulo';
-import Mapa from '../../components/mapa';
-import ColorToggleButton from '../../components/tipos';
+import Titulo from '../../componentes/titulo';
+import Mapa from '../../componentes/mapa';
+import ColorToggleButton from '../../componentes/tipos';
 
 import useLocation from '../../hooks/useLocation';
 import usePlans from '../../hooks/usePlans';
