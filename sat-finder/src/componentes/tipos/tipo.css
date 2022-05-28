@@ -1,0 +1,23 @@
+.botaoContainer{
+    width: 100vw;
+    justify-content: space-around;
+    margin-top: 40px;
+    height: 20px;
+   
+}
+
+.css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped:not(:last-of-type){
+    background-color: #0AA5AB;
+    border-radius : 0;
+    font-size:12px;
+    width: 73px;
+    color: white;
+}
+
+.css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped{
+    background-color: #0AA5AB;
+    border-radius : 0;
+    font-size:12px;
+    width: 73px;
+    color: white;
+}
