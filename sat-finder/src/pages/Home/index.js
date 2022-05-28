@@ -1,59 +1,36 @@
 import '../../App.css';
 import React, { useEffect, useState } from 'react';
+
 import Titulo from '../../components/titulo';
 import Mapa from '../../components/mapa';
 import ColorToggleButton from '../../components/tipos';
 
+import useLocation from '../../hooks/useLocation';
+import usePlans from '../../hooks/usePlans';
+
 function Home() {
     // GET LOCATION
-    const [location, setLocation] = useState([]);
-    useEffect(()=> {
-        function loadApi(lat, lng){
-          let url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}&localityLanguage=pt`;
+    const location = useLocation();
 
-          fetch(url)
-          .then((r)=> r.json())
-          .then((json)=> {
-            console.log(json.principalSubdivisionCode);
-            setLocation(json);
-          })
-
-        }
-
-        navigator.geolocation.getCurrentPosition((position) => {
-            loadApi(position.coords.latitude, position.coords.longitude);
-        });
-    }, []);
-
-    // const [estado, setEstado] = useState([]);
-    // useEffect(()=> {
-    //     function loadApi(lat, lng){
-    //       let url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}&localityLanguage=pt`;
-
-    //       fetch(url)
-    //       .then((r)=> r.json())
-    //       .then((json)=> {
-    //         console.log(json);
-    //         setLocation(json);
-    //       })
-
-    //     }
-
-    //     navigator.geolocation.getCurrentPosition((position) => {
-    //         loadApi(position.coords.latitude, position.coords.longitude);
-    //     });
-    // }, []);
+    // GET PLANS
+    const plans = usePlans(location);   
 
     return (
       <div>
         <Titulo texto = "REGIÃO"/>
         <Mapa/>
         <Titulo texto = "PLANOS" />
-        <div>
-            {location.principalSubdivisionCode}
-        </div>
-
         <ColorToggleButton/>
+        {plans.map((item) => {
+          return(
+           <p key={item.id}>
+            PROVEDOR={item.isp}
+            <br></br>
+            DESCRICAO={item.description}
+            <br></br>
+           </p>
+          );
+        })}
       </div>
     );
 }
