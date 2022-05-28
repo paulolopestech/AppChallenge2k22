@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap'); 
+
 .botaoContainer{
     width: 100vw;
     justify-content: space-around;
@@ -13,6 +15,7 @@
     width: 73px;
     color: white;
     height: 31px;
+    font-family: 'Jost', sans-serif;
 }
 
 .css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped{
@@ -22,4 +25,18 @@
     width: 73px;
     color: white;
     height: 31px;
+    font-family: 'Jost', sans-serif;
+}
+
+/* BOTAO SELECIONDO */
+.css-d9c359-MuiButtonBase-root-MuiToggleButton-root.Mui-selected{
+    background-color: #ACD243  !important;
+    color: #006A86;
+    font-weight: 400;
+}
+
+.css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped.Mui-selected+.MuiToggleButtonGroup-grouped.Mui-selected{
+    background-color: #ACD243  !important;
+    color: #006A86;
+    font-weight: 400;
 }

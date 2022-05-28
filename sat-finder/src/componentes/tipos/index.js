@@ -19,10 +19,10 @@ export default function ColorToggleButton() {
       onChange={handleChange}
       className = "botaoContainer"    
     >
-      <ToggleButton value="web" className='botao' >TODOS</ToggleButton>
-      <ToggleButton value="android" className='botao'>CABEADA</ToggleButton>
-      <ToggleButton value="ios" className='botao'>RADIO</ToggleButton>
-      <ToggleButton value="ios"className='botao'>SATÉLITE</ToggleButton>
+      <ToggleButton value="todos" className='botao' >TODOS</ToggleButton>
+      <ToggleButton value="cabeada" className='botao'>CABEADA</ToggleButton>
+      <ToggleButton value="radio" className='botao'>RADIO</ToggleButton>
+      <ToggleButton value="satelite"className='botao'>SATÉLITE</ToggleButton>
     </ToggleButtonGroup>
   );
 }
