@@ -1,17 +1,8 @@
-import * as React from 'react';
-import './App.css';
-import Titulo from './componentes/titulo';
-import Mapa from './componentes/mapa';
-import ColorToggleButton from './componentes/tipos';
+import RoutesApp from './routes';
 
 function App() {
   return (
-    <div>
-      <Titulo texto = "REGIÃO"/>
-      <Mapa/>
-      <Titulo texto = "PLANOS" />
-      <ColorToggleButton/>
-      </div>
+      <RoutesApp/>
   );
 }
 
