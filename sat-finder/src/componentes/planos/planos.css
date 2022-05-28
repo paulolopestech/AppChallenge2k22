@@ -1,0 +1,9 @@
+.container-plano{
+    background-color: #006A86;
+    width: 90vw;
+    margin: 0 auto;
+    height: 15vh;
+    display: flex;
+    justify-content: row;
+    
+}
