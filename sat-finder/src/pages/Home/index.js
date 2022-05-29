@@ -14,21 +14,29 @@ function Home() {
   const location = useLocation();
 
   // GET PLANS
-  const plans = usePlans(location);
+  let plans = usePlans(useLocation());
 
-  return (
-    <div>
-      <Titulo texto="REGIÃO" />
+  if(location !== []){
+    return(
+      <div>
+      <Titulo texto={`REGIÃO: ${location}`} />
       <Mapa />
       <Titulo texto="PLANOS" />
       <ColorToggleButton />
-      {plans.map((item) => {
+      {
+      plans.map((item) => {
         return (
           <Plano item={item} />
         );
-      })}
+      })
+    }
     </div>
-  );
+    );
+  }
+else{
+  return (
+    <p>LOADING...</p>
+  );}
 }
 
 export default Home;

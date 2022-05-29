@@ -14,7 +14,6 @@ export default function useLocation() {
           })
 
         }
-
         navigator.geolocation.getCurrentPosition((position) => {
             loadApi(position.coords.latitude, position.coords.longitude);
         });
