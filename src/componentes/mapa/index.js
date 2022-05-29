@@ -6,11 +6,19 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import osm from "./osm-providers";
 
 function Mapa(props) {
-    const [center, setCenter] = useState({lat: 10, lng: 10});
+    const [center, setCenter] = useState({});
+
+    useEffect(() => {
+        navigator.geolocation.getCurrentPosition((pos) => {
+            console.log(pos.coords.latitude)
+            setCenter({lat: pos.coords.latitude, lng: pos.coords.longitude})
+        });
+    }, []);
 
     const ZOOM_LEVEL = 9;
     const mapRef = useRef();
 
+    if(center.lat !== undefined)
     return(
         <div className="mapa" >
             <MapContainer
@@ -22,6 +30,9 @@ function Mapa(props) {
             </MapContainer>
         </div>
     );
+    else{
+        return(<h1>Loading...</h1>);
+    }
 }
 
 export default Mapa;

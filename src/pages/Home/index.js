@@ -11,7 +11,7 @@ function Home() {
   const {plans, estado} = usePlans();
 
   return(
-    <div  >
+    <div>
     <Titulo texto={`REGIÃO: ${estado}`} />
     <Mapa />
     <Titulo texto="PLANOS" />

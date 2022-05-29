@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
-import { useNavigate } from 'react-router-dom'
-import Home from "../Home";
+import { useNavigate } from 'react-router-dom';
 import './index.css';
 
 export default function Loading(props) {
     const navigate = useNavigate();
 
     useEffect(() => {
-        setTimeout(() => {navigate('/home')}, 5000);
+        setTimeout(() => {navigate('/home')}, 3000);
     }, [navigate]);
     
     return (
