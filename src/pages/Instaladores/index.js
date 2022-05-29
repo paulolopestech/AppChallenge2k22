@@ -31,7 +31,7 @@ function Instaladores(props) {
             return (
              
                 
-              <div className = "containerInstalador" >
+              <div className = "containerInstalador" key={instalador.id}>
               <h2>{instalador.name}</h2>
               <div className = "contentInstalador" >
                 <p>Preço/Km: R$  {instalador.price_per_km}</p>
