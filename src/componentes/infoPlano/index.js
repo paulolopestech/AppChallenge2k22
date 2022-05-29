@@ -15,7 +15,6 @@ function Radio() {
 
 function TipoDeInternet(tipo) {
     const TipoDeInternet = tipo.tipo;
-    console.log(typeof TipoDeInternet)
     if (TipoDeInternet == 'sat') {
         return <Satelite />;
     }

@@ -10,7 +10,6 @@ function Mapa(props) {
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition((pos) => {
-            console.log(pos.coords.latitude)
             setCenter({lat: pos.coords.latitude, lng: pos.coords.longitude})
         });
     }, []);
