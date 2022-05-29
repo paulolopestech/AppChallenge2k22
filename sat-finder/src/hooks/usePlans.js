@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 
-export default function usePlans(location) {
-
+export default function usePlans() {
+    const [estado, setEstado] = useState();
     const [plans, setPlans] = useState([]);
+
     useEffect(()=> {
         function loadApi(location){
           let url = `https://app-challenge-api.herokuapp.com/plans?state=${location}`;
@@ -10,7 +11,6 @@ export default function usePlans(location) {
           fetch(url)
           .then((r)=> r.json())
           .then((json)=> {
-            console.log(location)
             setPlans(json);
           })
         }
@@ -22,8 +22,8 @@ export default function usePlans(location) {
           fetch(url)
           .then((r)=> r.json())
           .then((json)=> {
-            let estado = json.principalSubdivisionCode.slice(-2);
-              loadApi(estado);
+            setEstado(json.principalSubdivisionCode.slice(-2));
+            loadApi(json.principalSubdivisionCode.slice(-2));
           })
 
         }
@@ -32,5 +32,9 @@ export default function usePlans(location) {
     });
     }, []);
 
-    return plans;
+    const response = {
+      plans, estado
+    }
+    
+    return response;
 }
