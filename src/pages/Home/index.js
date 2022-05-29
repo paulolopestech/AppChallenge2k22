@@ -19,7 +19,7 @@ function Home() {
     {
     plans.map((item) => {
       return (
-        <Plano item={item} />
+        <Plano item={item} key={item.id}/>
       );
     })
   }

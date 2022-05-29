@@ -6,6 +6,7 @@ import Descricao from './pages/Descricao';
 import Instaladores from './pages/Instaladores';
 import Agendar from './pages/Agendar';
 import Loading from './pages/Loading';
+import Favoritos from './pages/Favoritos';
 
 function RoutesApp(){
   return(
@@ -17,6 +18,7 @@ function RoutesApp(){
         <Route path="/descricao/:id" element={ <Descricao/> } />
         <Route path="/instaladores" element={ <Instaladores/> } />
         <Route path="/agendar" element={ <Agendar/> } />
+        <Route path="/favoritos" element={ <Favoritos/> } />
       </Routes>
     </BrowserRouter>
   )
