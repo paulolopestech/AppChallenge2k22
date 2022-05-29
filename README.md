@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# App Chalenger 2K22
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Manuela Gripp Silva
 
-## Available Scripts
+<div>
+<a href="https://github.com/ManuelaGripp" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/manuela-gripp-b8789b1a9/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
+</div>
 
-In the project directory, you can run:
 
-### `npm start`
+### Paulo Henrique Lopes Junior
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div>
+<a href="https://github.com/paulotc1999" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/paulotc1999/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<hr>
 
-### `npm test`
+## Get start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Ter instalado as seguintes versões:
+* Node versão v16.13.2
+* React versão  v13.3.0
 
-### `npm run build`
+Após ter tudo instaldo rode a linha `npm install` para instalar os pacotes necessários. Para rodar a aplicação utilize o código `npm start` e a página
+irá abrir no [http://localhost:3000](http://localhost:3000) do seu navegador. Fizemos a nossa aplicação pensando em Web Mobile logo para ter a melhor experiência da aplicação pedimos que abra o modo desenvolvedor do navegador com o atalho `ctrl + shift + i` e selecione na caixa DIMENSIONS algum modelo mobile de sua preferência.
+![image](https://user-images.githubusercontent.com/65041975/170891008-cad7ad55-6b4f-43c4-833b-632c72bfe7aa.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<hr>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Nossa aplicação 
 
-### `npm run eject`
+Nosso cliente tem a sua disposição os planos de internet que estão disponíveis em sua região, podendo escolher baseado no preço, velocidade de download e upload e a empresa que fornece. Após selecionar o plano desejado ele parte para a escolha do instalador, nessa página ele pode optar pelo instalador de acordo com nota e distância.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Front-End
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para a construção do Front-End utilizamos a biblioteca JavaScript [React](https://pt-br.reactjs.org) junto da biblioteca [MIU](https://mui.com/pt/) de componentes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Futura Feature
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Será implementado futuramente a feature de favoritos onde o cliente poderá favoritar os planos que achar interessante.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
