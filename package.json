@@ -1,6 +1,9 @@
 {
   "name": "appchallenge2k22",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.13.2"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
