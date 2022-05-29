@@ -1,7 +1,11 @@
-.mapa{
+/* .mapa{
     height: 290px;
     background-color: gray;
     margin: 40px 15px;
     text-align: center;
+} */
 
+.leaflet-container{
+    height: 290px;
+    margin: 40px 15px;
 }
