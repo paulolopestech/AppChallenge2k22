@@ -14,7 +14,7 @@ function Mapa(props) {
         });
     }, []);
 
-    const ZOOM_LEVEL = 9;
+    const ZOOM_LEVEL = 14;
     const mapRef = useRef();
 
     if(center.lat !== undefined)
