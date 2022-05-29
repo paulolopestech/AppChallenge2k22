@@ -12,7 +12,7 @@ function InfoPlano (props) {
             <h5>UPLOAD: {props.plano.upload_speed}</h5>
             <h5>TIPO DE INTERNET: {props.plano.type_of_internet}</h5>
             <p>Descricao: {props.plano.description}</p>
-            <Link to='/instaladores' state={props.plano}>AGENDAR INSTALAÇÃO</Link>
+            <Link to='/instaladores' state={props.plano}>QUERO ESSE PLANO</Link>
         </div>
     );
 }

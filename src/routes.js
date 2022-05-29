@@ -4,6 +4,7 @@ import Plano from './componentes/planos';
 import Home from './pages/Home';
 import Descricao from './pages/Descricao';
 import Instaladores from './pages/Instaladores';
+import Agendar from './pages/Agendar';
 
 function RoutesApp(){
   return(
@@ -12,6 +13,7 @@ function RoutesApp(){
         <Route path="/" element={ <Home/> } />
         <Route path="/descricao/:id" element={ <Descricao/> } />
         <Route path="/instaladores" element={ <Instaladores/> } />
+        <Route path="/agendar" element={ <Agendar/> } />
       </Routes>
     </BrowserRouter>
   )
