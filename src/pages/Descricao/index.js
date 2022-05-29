@@ -5,14 +5,14 @@ import { useLocation } from 'react-router-dom';
 import Titulo from '../../componentes/titulo';
 import InfoPlano from '../../componentes/infoPlano';
 
-function Descricao(props) {
+function Descricao() {
   const location = useLocation();
-  const item = location.state;
+  const plano = location.state;
   
   return (
     <div>
       <Titulo texto = 'DESCRIÇÃO'/>
-      <InfoPlano item ={item}/>
+      <InfoPlano plano ={plano}/>
     </div>
   );
 }
