@@ -4,7 +4,7 @@
 {
     /* background-color: #fff; */
     
-    z-index: 99;
+    z-index: 9002;
     position: fixed;
     width: 100px;
     padding: 10px;
@@ -17,6 +17,10 @@
     margin-top: -100px; 
     margin-left: -50px;
     border-radius: 0.5rem;
+
+    color: white;
+    font-weight: 900;
+    font-size: larger;
 
 }
 

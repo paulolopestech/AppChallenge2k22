@@ -6,7 +6,7 @@ export default function Loading(props) {
     const navigate = useNavigate();
 
     useEffect(() => {
-        setTimeout(() => {navigate('/home')}, 3000);
+        setTimeout(() => {navigate('/selecionar')}, 1500);
     }, [navigate]);
     
     return (
