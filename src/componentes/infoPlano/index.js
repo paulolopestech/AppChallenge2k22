@@ -59,7 +59,7 @@ function InfoPlano(props) {
                 </div>
             </div>
             <div className = "areaDescricao" >
-                <h4>Descrição</h4>
+                <h4>Descrição:</h4>
             <p> {props.plano.description}</p>
             </div>
             <Link to='/instaladores' state={props.plano} className = "agendamento" >AGENDAR INSTALAÇÃO</Link>

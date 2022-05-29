@@ -47,6 +47,10 @@
 
 .areaDescricao h4{
     margin: 0;
+    margin-left: 10px;
+}
+.areaDescricao p{
+    text-align: center;
 }
 
 .agendamento{

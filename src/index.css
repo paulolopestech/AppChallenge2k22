@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.vsc-initialized {
+  background-image: url('./assets/img/bg.png');
+}
