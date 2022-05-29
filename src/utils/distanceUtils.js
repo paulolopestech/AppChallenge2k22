@@ -1,18 +1,20 @@
 export default function distance(lat1,lon1,lat2,lon2) {
-	var R = 6371; // Radius of the earth in km
-	var dLat = deg2rad(lat2-lat1);  // deg2rad below
-	var dLon = deg2rad(lon2-lon1); 
-	var a = 
-	  Math.sin(dLat/2) * Math.sin(dLat/2) +
-	  Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
-	  Math.sin(dLon/2) * Math.sin(dLon/2)
-	  ; 
-	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-	var d = R * c; // Distance in km
-	console.log(d)
-	return d;
+	const lat1Str = String(lat1).slice(0, 2);
+	const lat1Num = Number(lat1Str);
+
+	const lon1Str = String(lon1).slice(0, 2);
+	const lon1Num = Number(lon1Str);
+
+	const lat2Str = String(lat2).slice(0, 2);
+	const lat2Num = Number(lat2Str);
+
+	const lon2Str = String(lon2).slice(0, 2);
+	const lon2Num = Number(lon2Str);
+
+	let y = lat2Num - lat1Num;
+    let x = lon2Num - lon1Num;
+    const distance = Math.sqrt(x * x + y * y);
+
+    return distance;
   }
   
-  function deg2rad(deg) {
-	return deg * (Math.PI/180)
-  }

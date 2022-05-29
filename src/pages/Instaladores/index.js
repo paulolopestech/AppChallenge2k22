@@ -1,6 +1,7 @@
 import '../../App.css';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Titulo from '../../componentes/titulo';
 import useInstaladores from '../../hooks/useInstaladores';
@@ -15,7 +16,6 @@ function Instaladores(props) {
   let lat, long;
   navigator.geolocation.getCurrentPosition((position) =>
     {
-      
       lat = position.coords.latitude;
       long = position.coords.longitude;
   }
@@ -35,6 +35,7 @@ function Instaladores(props) {
                   (instalador.price_per_km)*distance(lat, long, instalador.lat, instalador.long)
                   }</p>
                 <p>NOTA: {instalador.rating}</p>
+                <Link to={`/agendar`} state={{plano, instalador}}>Agendar Instalacao</Link>
                 <br></br>
               </div>
             );
