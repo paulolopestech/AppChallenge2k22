@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap'); 
 
 .container-plano{
-    background-color: #006A86;
+    background-image: url('../../assets/img/retangulo.png');
     width: 90vw;
     margin: 0 auto;
     height: 15vh;
@@ -10,6 +10,7 @@
     margin-bottom: 20px;
     color: white;
     font-family: 'Jost', sans-serif;
+    border: 1px solid white;
     
 }
 
@@ -21,6 +22,7 @@
 }
 .InfoMarca img{
     width: 70%;
+    background-color: #EA6AFF;
 }
 .InfoMarca h5{
     font-weight: 400;
@@ -43,15 +45,15 @@
 
 .container-plano .InfoPlano .tipo{
     font-size: 30px;
-    color: black;
+    color: white;
 }
 
 .InfoPlano a{
     text-decoration: none;
-    color: #0AA5AB;
+    color: #EA6AFF;
 }
 
 .InfoPlano a:hover{
     text-decoration: none;
-    color: #ACD243;
+    color: #EA6AFF;
 }
