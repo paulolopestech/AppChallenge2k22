@@ -3,6 +3,8 @@ import '../../App.css';
 import Titulo from '../../componentes/titulo';
 import Plano from '../../componentes/planos';
 
+import './favoritos.css';
+
 function Favoritos() {
   // GET PLANS AND LOCATION
   const plans = [
@@ -43,6 +45,8 @@ function Favoritos() {
   return(
     <div>
     <Titulo texto={"FAVORITOS"} />
+    <br></br>
+    <br></br>
     {
     plans.map((item) => {
       return (
