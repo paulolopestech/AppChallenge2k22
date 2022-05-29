@@ -9,7 +9,7 @@
 }
 
 .css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped:not(:last-of-type){
-    background-color: #0AA5AB;
+    background-color: #7835A9;
     border-radius : 0;
     font-size:12px;
     width: 73px;
@@ -19,7 +19,7 @@
 }
 
 .css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped{
-    background-color: #0AA5AB;
+    background-color: #7835A9;
     border-radius : 0;
     font-size:12px;
     width: 73px;
@@ -30,13 +30,13 @@
 
 /* BOTAO SELECIONDO */
 .css-d9c359-MuiButtonBase-root-MuiToggleButton-root.Mui-selected{
-    background-color: #ACD243  !important;
-    color: #006A86;
+    background-color: #EA6AFF  !important;
+    color: #2C1D5A  !important;
     font-weight: 400;
 }
 
 .css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped.Mui-selected+.MuiToggleButtonGroup-grouped.Mui-selected{
-    background-color: #ACD243  !important;
-    color: #006A86;
+    background-color: #EA6AFF  !important;
+    color: #2C1D5A  !important;
     font-weight: 400;
 }

@@ -2,5 +2,71 @@
  /* font-family: 'Jost', sans-serif; */
 
 .containerInfoPlano{
+    margin-top: 40px;
+}
 
+.contentInfoPlano{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 32vh;
+    align-items: center;
+    background-color: rgba(234,106,255,0.7);
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.contentInfoPlano h5{
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    font-family: 'Jost', sans-serif; 
+}
+.contentInfoPlano h4{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif; 
+
+}
+
+.info{
+    width: 43vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.areaDescricao{
+    width: 90vw;
+    height: 15vh;
+    margin: 0 auto;
+    background-color: rgba(234,106,255,0.7);
+    padding-top: 20px;
+    margin-bottom: 45px;
+}
+
+.areaDescricao h4{
+    margin: 0;
+    margin-left: 10px;
+}
+.areaDescricao p{
+    text-align: center;
+}
+
+.agendamento{
+    display: block;
+    width: 56vw;
+    background-color: #7835A9;
+    padding: 11px 26px;
+    text-decoration: none;
+    border: 2px solid white;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
 }

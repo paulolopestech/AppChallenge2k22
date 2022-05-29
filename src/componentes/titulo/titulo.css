@@ -3,15 +3,15 @@
 .container{
     width: 70vw;
     height: 50px;
-    background-color: #0AA5AB;
-    color: #ACD243;
+    background-color: #7835A9;
+    color: #EA6AFF;
 }
 
 
 .content{
     font-size: 32px;
-    width: 90.5%;
-    background-color: #006A86;
+    width: 88.5%;
+    background-color: #2C1D5A;
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     padding-left: 25px;

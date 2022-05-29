@@ -2,6 +2,7 @@ import '../../App.css';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import './instaladores.css'
 
 import Titulo from '../../componentes/titulo';
 import useInstaladores from '../../hooks/useInstaladores';
@@ -28,15 +29,18 @@ function Instaladores(props) {
         {
           instaladores.map((instalador) => {
             return (
-              <div>
-                <h2>NOME: {instalador.name}</h2>
-                <p>PREÇO/KM: {instalador.price_per_km}</p>
-                <p>PREÇO: {
+             
+                
+              <div className = "containerInstalador" >
+              <h2>{instalador.name}</h2>
+              <div className = "contentInstalador" >
+                <p>Preço/Km: R$  {instalador.price_per_km}</p>
+                <p>Preço: R$ {
                   (instalador.price_per_km)*distance(lat, long, instalador.lat, instalador.long)
                   }</p>
-                <p>NOTA: {instalador.rating}</p>
-                <Link to={`/agendar`} state={{plano, instalador}}>Agendar Instalacao</Link>
-                <br></br>
+                <p>Nota: {instalador.rating}</p>
+              </div>
+                <Link to={`/agendar`} state={{plano, instalador}}>Agendar Instalação</Link>
               </div>
             );
           })
