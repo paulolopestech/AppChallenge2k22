@@ -11,7 +11,7 @@ function Descricao() {
   
   return (
     <div>
-      <Titulo texto = 'DESCRIÇÃO'/>
+      <Titulo texto = "DESCRIÇÃO"/>
       <InfoPlano plano ={plano}/>
     </div>
   );
