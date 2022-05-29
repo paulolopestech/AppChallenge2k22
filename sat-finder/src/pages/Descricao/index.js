@@ -1,23 +1,18 @@
 import '../../App.css';
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import Titulo from '../../componentes/titulo';
 import InfoPlano from '../../componentes/infoPlano';
 
-import useLocation from '../../hooks/useLocation';
-import usePlans from '../../hooks/usePlans';
-
-function Descricao() {
-  // GET LOCATION
+function Descricao(props) {
   const location = useLocation();
-
-  // GET PLANS
-  const plans = usePlans(location);
-
+  const item = location.state;
+  
   return (
     <div>
       <Titulo texto = 'DESCRIÇÃO'/>
-      <InfoPlano/>
+      <InfoPlano item ={item}/>
     </div>
   );
 }
