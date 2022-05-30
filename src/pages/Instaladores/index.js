@@ -6,7 +6,6 @@ import './instaladores.css'
 
 import Titulo from '../../componentes/titulo';
 import useInstaladores from '../../hooks/useInstaladores';
-import coordinatesUtils from '../../utils/coordinatesUtils';
 import distance from '../../utils/distanceUtils';
 
 function Instaladores(props) {

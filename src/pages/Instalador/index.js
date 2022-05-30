@@ -1,7 +1,7 @@
 import '../../App.css';
 
 import Titulo from '../../componentes/titulo';
-import Cliente from '../../componentes/clientes';
+import Cliente from '../../componentes/clientes/index.js';
 
 function Clientes() {
   // GET PLANS AND LOCATION

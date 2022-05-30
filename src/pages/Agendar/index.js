@@ -28,7 +28,7 @@ function Agendar(props) {
               <p>Velocida de Download: {plano.download_speed}</p>
           </div>
 
-          <button className='botaoAgendar' >CONRTATAR</button>
+          <button className='botaoAgendar' >CONTRATAR</button>
       </div>
   );
 }
